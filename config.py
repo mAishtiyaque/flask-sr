@@ -7,7 +7,7 @@ class Config(object):
     TESTING = False
     PORT =port
     SECRET_KEY = 'very_very-very_very Secret-Key'
-    SQLALCHEMY_DATABASE_URI="postgresql://caanrfieefnvmu:684b136d7f4108ae5a0d44014b97e270c22be042b22f56c70e7967079bf7e346@ec2-54-152-28-9.compute-1.amazonaws.com:5432/d9abrq28rmoilb"
+    SQLALCHEMY_DATABASE_URI="postgres://uootornqvinrxu:12c268b0a499dad621a5ded9c9214a1bc9a120b1a7988a0a6a496cf51002f48c@ec2-44-206-197-71.compute-1.amazonaws.com:5432/dfsoqjfus90nu"
 
 class ProductionConfig(Config):
     DEBUG = False
