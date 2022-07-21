@@ -3,11 +3,13 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Column, String
 #from sqlalchemy.orm import declarative_base
 #Base = declarative_base()
-import config 
+
+#from config import DevelopmentConfig as config
+from config import ProductionConfig as config
 from flask_cors import CORS
 app=Flask(__name__)
-CORS(app, resources={r"/users/*": {"origins": "https://maishtiyaque.github.io/"}})
-app.config.from_object(config.ProductionConfig)
+CORS(app, resources={r"/users/*": {"origins": "*"}})
+app.config.from_object(config)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

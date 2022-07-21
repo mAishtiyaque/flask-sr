@@ -220,4 +220,4 @@ def handleAddItem():
 def handle_404(path):
     return '<title>405 Method Not Allowed</title><b>%s</b> <h1>Method Not Allowed**</h1><p>The method is not allowed for the requested URL.</p>' % path ,404
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=config.Config.PORT)
+    app.run(host='0.0.0.0', port=config.PORT)
